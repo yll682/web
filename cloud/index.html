@@ -1,0 +1,123 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>网盘2</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            --text-color: #000;
+            --background-color: #fff;
+          }
+        
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+        
+          li {
+            margin-bottom: 10px;
+          }
+        
+          a {
+            text-decoration: none;
+            color: #007bff;
+          }
+        
+          button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        
+          @media (max-width: 480px) {
+            body {
+              font-size: 14px;
+            }
+        
+            button {
+              font-size: 12px;
+              padding: 4px 8px;
+            }
+          }
+        
+          /* Dark mode styles */
+          @media (prefers-color-scheme: dark) {
+            body {
+              --text-color: #fff;
+              --background-color: #333;
+            }
+          }
+        
+          body {
+            color: var(--text-color);
+            background-color: var(--background-color);
+          }
+        </style>
+    </head>
+    <body>
+      <ul>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tof8b">Clash</a> ： 
+          <button onclick="copyPassword('ecb0')">点击复制密码：ecb0</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090toine">Matsuri</a> ： 
+          <button onclick="copyPassword('500p')">点击复制密码：500p</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tokle">Devcheck</a> ： 
+          <button onclick="copyPassword('ebwd')">点击复制密码：ebwd</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tolyd">MT管理器</a> ： 
+          <button onclick="copyPassword('ck5i')">点击复制密码：ck5i</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tom2h">Chrome</a> ： 
+          <button onclick="copyPassword('bawp')">点击复制密码：bawp</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090topmf">AppDownload</a> ： 
+          <button onclick="copyPassword('45x9')">点击复制密码：45x9</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tor3i">AI</a> ： 
+          <button onclick="copyPassword('3njk')">点击复制密码：3njk</button>
+        </li>
+        <li>
+          <a href="https://yll682.lanzoui.com/b090tosne">杂项</a> ： 
+          <button onclick="copyPassword('5y4w')">点击复制密码：5y4w</button>
+        </li>
+      </ul>
+    
+      <script>
+        function copyPassword(password) {
+          // 创建一个文本输入框
+          var input = document.createElement('input');
+          input.setAttribute('type', 'text');
+          input.setAttribute('value', password);
+          
+          // 将文本输入框添加到页面中
+          document.body.appendChild(input);
+    
+          // 选择文本输入框中的内容
+          input.select();
+    
+          // 复制选中的内容
+          document.execCommand('copy');
+    
+          // 移除文本输入框
+          document.body.removeChild(input);
+    
+          // 弹出复制成功的提示
+          alert('密码已复制：' + password);
+        }
+      </script>
+    </body>
+    </html>
